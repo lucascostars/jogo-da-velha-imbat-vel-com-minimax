@@ -66,6 +66,18 @@ A profundidade faz o algoritmo preferir vitórias mais rápidas e, em posições
 
 Com a implementação correta, o computador não perde: contra um jogador que também faz as melhores escolhas, a partida termina em empate.
 
+## Fluxo de escolha da jogada
+
+```mermaid
+flowchart TD
+    A["Computador recebe o tabuleiro"] --> B["Simula uma jogada em uma casa livre"]
+    B --> C["Minimax avalia as possíveis continuações"]
+    C --> D["Desfaz a jogada e guarda a pontuação"]
+    D --> E{"Ainda há casas para avaliar?"}
+    E -->|Sim| B
+    E -->|Não| F["Executa a jogada com maior pontuação"]
+```
+
 ## Decisões de implementação
 
 ### Busca completa
