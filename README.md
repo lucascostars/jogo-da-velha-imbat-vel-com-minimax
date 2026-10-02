@@ -116,6 +116,15 @@ O programa retorna `0` se não houver derrotas e um valor diferente de zero se d
 
 Esse teste verifica a estratégia de jogo. Ele não cobre a interação com o menu nem a leitura das entradas no terminal.
 
+### Resultado da execução
+
+```text
+Jogador começa: 569 partidas, IA perdeu 0
+IA começa:      73 partidas, IA perdeu 0
+```
+
+Foram exploradas 642 partidas contra a estratégia determinística do computador, sem nenhuma derrota da IA.
+
 ## Estrutura do projeto
 
 ```text
