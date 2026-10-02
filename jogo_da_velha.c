@@ -31,7 +31,7 @@ int reiniciarJogo(char tabuleiro[TAMANHO][TAMANHO]);
 int novaPartida(void);
 void menu(void);
 
-int main() {
+int main(void) {
     setlocale(LC_ALL, "");
     srand(time(NULL));
     menu();
